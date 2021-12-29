@@ -995,6 +995,83 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/24/%E8%BF%99%E6%98%AF%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="slow慢的">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="slow慢的">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/01/24/%E8%BF%99%E6%98%AF%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/" class="post-title-link" itemprop="url">未命名</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-01-24 19:00:48" itemprop="dateCreated datePublished" datetime="2020-01-24T19:00:48+08:00">2020-01-24</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-01-30 21:23:05" itemprop="dateModified" datetime="2020-01-30T21:23:05+08:00">2020-01-30</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="主要内容"><a href="#主要内容" class="headerlink" title="主要内容"></a>主要内容</h2><ul>
+<li>练习使用markdown</li>
+<li>介绍一下我学习到的博客搭建的流程</li>
+<li>博客文章写作与发布</li>
+<li>博客美化（挖个坑）</li>
+<li>计划一下以后个人各个内容平台怎么使用</li>
+</ul>
+<h2 id="播客搭建"><a href="#播客搭建" class="headerlink" title="播客搭建"></a>播客搭建</h2><blockquote>
+<p>资料来自<br>1.<a target="_blank" rel="noopener" href="https://godweiyang.com/2018/04/13/hexo-blog/#toc-heading-2">韦阳的博客</a><br>2.<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/av44544186?t=1553">Code Sheep</a><br>3.<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/av24897960/">hojun_cn</a><br>4.<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/av51303354?t=70">301技术</a><br>其它众多网页教程</p>
+</blockquote>
+<h3 id="Git安装"><a href="#Git安装" class="headerlink" title="Git安装"></a><a target="_blank" rel="noopener" href="https://git-scm.com/download/win">Git安装</a></h3><h3 id="Node-js安装"><a href="#Node-js安装" class="headerlink" title="Node.js安装"></a><a target="_blank" rel="noopener" href="https://nodejs.org/en/">Node.js安装</a></h3><h3 id="Sublime安装"><a href="#Sublime安装" class="headerlink" title="Sublime安装"></a><a target="_blank" rel="noopener" href="https://www.sublimetext.com/">Sublime安装</a></h3><h3 id="Hexo安装"><a href="#Hexo安装" class="headerlink" title="Hexo安装"></a>Hexo安装</h3><p>1.新建文件夹，右键Git Bash here<br>2.输入（安装<br>    <code>npm install -g hexo --registry=https://registry.npm.taobao.org </code><br>3.输入（检验安装成功<br>    <code>hexo -v</code><br>4.输入（初始化文件夹<br>    <code>hexo init --registry=https://registry.npm.taobao.org</code><br>5.输入（安装组件<br>    <code>npm install --registry=https://registry.npm.taobao.org</code><br>6.输入 (检验成功<br>    <code>hexo g</code><br>    <code>hexo s</code><br>浏览器打开链接 <a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a><br>7.输入<br>    <code>npm install --save hexo-deployer-git</code></p>
+<h3 id="NexT主题安装"><a href="#NexT主题安装" class="headerlink" title="NexT主题安装"></a>NexT主题安装</h3><p>Git Bash here输入<br>    <code> git clone https://github.com/theme-next/hexo-theme-next themes/next</code></p>
+<h3 id="GitHub与本地连接"><a href="#GitHub与本地连接" class="headerlink" title="GitHub与本地连接"></a>GitHub与本地连接</h3><p>1.注册GitHub<br>2.新建new repository:<code>账号.github.io</code><br>勾选<code>Initialize this repository with a README</code><br>3.用Sublime打开文件夹下的<code>_config.yml</code>文件<br>theme改为next<br>最后一行改为<br>   <code>deploy:     type: git     repository: https://github.com/godweiyang/godweiyang.github.io     branch: master</code><br>    4.右键打开git bash，输入：<br>   <code>git config --global user.name &quot;账号&quot;</code><br>   <code>git config --global user.email &quot;邮箱&quot;</code><br>输入<br>   <code>ssh-keygen -t rsa -C &quot;邮箱&quot;</code><br>输入<br>   <code>cat ~/.ssh/id_rsa.pub</code><br>    5.打开GitHub设置新建SSH keys<br>将gitbash框中的<code>ssh-rsa一直到.com</code>复制到GitHub的key         框中，完成新建<br>6.回到Git bash<br>输入<code>ssh -T git@github.com</code>看到用户名即为成功<br>7.本地链接到GitHub<br>输入<br>   <code>hexo clean</code><br>   <code>hexo g</code><br>   <code>hexo d</code><br>浏览器输入<code>账号.github.io</code><br>即可看到博客</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/05/%E9%9F%B3%E4%B9%90%E6%AC%A3%E8%B5%8F%E6%8F%90%E5%8D%87%E8%AE%A1%E5%88%92/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1146,7 +1223,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">4</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
