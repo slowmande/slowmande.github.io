@@ -1,0 +1,33 @@
+```
+# Generated based on detected file changes
+
+# Build artifacts and generated files
+2026/
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# Environment and cache files
+.env
+.env.local
+.env.*
+
+# Editor/IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Dependencies and virtual environments
+node_modules/
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Distribution and build directories
+dist/
+build/
+target/
+```
